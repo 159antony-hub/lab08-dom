@@ -17,8 +17,17 @@
 <body>
   <h1 id="titulo">Lista de tareas</h1>
 
+  <form id="formTarea">
+    <input id="textoTarea" type="text" maxlength="60" placeholder="Nueva tarea">
+    <button type="submit">Agregar</button>
+    <br>
+    <small id="contadorCaracteres">0 / 60</small>
+  </form>
+  <p id="mensaje"></p>
+
   <ul id="lista"></ul>
   <p>Pendientes: <span id="pendientes">0</span></p>
+  <p><small>Haz clic en una tarea para marcarla como hecha.</small></p>
 
   <script src="app.js"></script>
 </body>
